@@ -27,7 +27,7 @@ function Navbar({ isAuthenticated, activePage, setActivePage }) {
       {/*logo*/}
       <div className="flex items-center space-x-4">
         <img
-          src="/imagens/logo.png"
+          src="imagens/logo.png"
           alt="Logo"
           className="w-10 h-10 cursor-pointer"
           onClick={() => setActivePage('home')}

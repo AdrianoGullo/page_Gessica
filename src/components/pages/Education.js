@@ -9,7 +9,7 @@ function EducationTimeline() {
       <section
         className="flex items-center justify-center text-white text-center w-full py-10"
         style={{
-          backgroundImage: "url('/imagens/divisor1.png')",
+          backgroundImage: "url('imagens/divisor1.png')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",

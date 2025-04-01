@@ -9,7 +9,7 @@ function Show_Publications() {
             <section
             className="relative flex items-center justify-center text-white text-center w-4/4"
             style={{
-              backgroundImage: "url('/imagens/divisor2.png')",
+              backgroundImage: "url('imagens/divisor2.png')",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",

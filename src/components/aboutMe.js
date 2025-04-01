@@ -21,7 +21,7 @@ function AboutMe() {
       {/* Imagem à Direita */}
       <div className="w-full md:w-1/2 flex justify-evenly md:justify-evenly md:mr-20 mt-6 md:mt-0">
         <img 
-          src="/imagens/foto2.png" 
+          src="imagens/foto2.png" 
           alt="Gessica" 
           className="w-100 md:w-100 h-auto rounded-lg shadow-lg"
         />

@@ -16,7 +16,7 @@ function Home({setActivePage})  {
       <section
         className="relative flex items-center justify-center text-white text-center w-4/4"
         style={{
-          backgroundImage: "url('/imagens/divisor1.png')",
+          backgroundImage: "url('imagens/divisor1.png')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
@@ -29,7 +29,7 @@ function Home({setActivePage})  {
       <section
         className="relative flex items-center justify-center text-white text-center w-4/4"
         style={{
-          backgroundImage: "url('/imagens/divisor2.png')",
+          backgroundImage: "url('imagens/divisor2.png')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
@@ -42,7 +42,7 @@ function Home({setActivePage})  {
       <section
         className="relative flex items-center justify-center text-white text-center w-4/4"
         style={{
-          backgroundImage: "url('/imagens/divisor3.png')",
+          backgroundImage: "url('imagens/divisor3.png')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
@@ -55,7 +55,7 @@ function Home({setActivePage})  {
       <section
         className="relative flex items-center justify-center text-white text-center w-4/4"
         style={{
-          backgroundImage: "url('/imagens/divisor4.png')",
+          backgroundImage: "url('imagens/divisor4.png')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
