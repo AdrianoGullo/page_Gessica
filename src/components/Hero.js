@@ -7,7 +7,7 @@ function Hero( {setActivePage} ) {
       <header
         className="relative flex flex-col md:flex-row items-center px-15 md:px-40 py-10 bg-fixed bg-top shadow-2xl"
         style={{
-          backgroundImage: "url('./imagens/fundo2.png')",
+          backgroundImage: "url('imagens/fundo2.png')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
