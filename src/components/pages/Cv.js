@@ -37,19 +37,19 @@ function CvViewer() {
             swipeable={true}
           >
             <div className="shadow-lg  rounded-lg overflow-hidden">
-              <img src="/imagens/cv/cv1.png" alt="Foto 1" />
+              <img src="imagens/cv/cv1.png" alt="Foto 1" />
             </div>
             <div>
-              <img src="/imagens/cv/cv2.png" alt="Foto 2" />
+              <img src="imagens/cv/cv2.png" alt="Foto 2" />
             </div>
             <div>
-              <img src="/imagens/cv/cv3.png" alt="Foto 3" />
+              <img src="imagens/cv/cv3.png" alt="Foto 3" />
             </div>
             <div>
-              <img src="/imagens/cv/cv4.png" alt="Foto 4" />
+              <img src="imagens/cv/cv4.png" alt="Foto 4" />
             </div>
             <div>
-              <img src="/imagens/cv/cv5.png" alt="Foto 5" />
+              <img src="imagens/cv/cv5.png" alt="Foto 5" />
             </div>
           </Carousel>
         </div>
