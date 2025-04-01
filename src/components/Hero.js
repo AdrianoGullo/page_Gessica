@@ -25,7 +25,7 @@ function Hero( {setActivePage} ) {
         {/* Imagem acima no mobile, direita no desktop */}
         <div className="w-full flex justify-center md:w-1/4 md:justify-end mb-6 md:mb-0">
           <img
-            src="/imagens/2025-03-31_17-18.png"
+            src="imagens/2025-03-31_17-18.png"
             alt="Gessica"
             className="w-48 md:w-full h-auto rounded-lg shadow-lg"
           />
