@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FiMenu, FiX } from "react-icons/fi"; // Ícones de menu
 
-function Navbar({ setActivePage }) {
+function Navbar({ isAuthenticated, activePage, setActivePage }) {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -24,21 +24,28 @@ function Navbar({ setActivePage }) {
 
   return (
     <nav className="text-black flex justify-between items-center py-3 px-6 bg-white shadow-md relative">
-      {/* Logo + Botão Admin */}
+      {/*logo*/}
       <div className="flex items-center space-x-4">
-        <img src="/imagens/logo.png" alt="Logo" className="w-10 h-10" />
-        {/* Botão Admin (visível apenas se autenticado) */}
-        {localStorage.getItem("adminToken") && (
-          <button
-            onClick={() => setActivePage("admin-dashboard")}
-            className="px-3 py-1 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 text-sm"
-          >
+        <img
+          src="/imagens/logo.png"
+          alt="Logo"
+          className="w-10 h-10 cursor-pointer"
+          onClick={() => setActivePage('home')}
+        />
+        {/*admin ou botão de login (visível apenas quando não autenticado) */}
+        {!isAuthenticated && activePage === "home" && (
+        <div className="text-left bg-white">
+          <button 
+            onClick={() => setActivePage("admin-login")}
+            className="font-mono text-gray-300 hover:text-green-900 text-sm borderrounded bg-white"
+            >
             Admin
           </button>
-        )}
+        </div>
+        )} 
       </div>
 
-      {/* Botão de menu (mobile) */}
+      {/* botão de menu - mobile */}
       <button
         className="md:hidden text-2xl focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
@@ -48,7 +55,7 @@ function Navbar({ setActivePage }) {
 
       {/* Links de navegação */}
       <div className="hidden md:flex">
-        <ul className="flex items-center">
+        <ul className="flex items-center font-serif">
           {[
             { label: "Home", page: "home" },
             { label: "Short Bio", page: "shortbio" },
@@ -73,7 +80,7 @@ function Navbar({ setActivePage }) {
         </ul>
       </div>
 
-      {/* Dropdown Mobile */}
+      {/* dropdown mobile */}
       {isOpen && (
         <div
           ref={dropdownRef}

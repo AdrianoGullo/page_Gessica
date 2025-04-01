@@ -1,8 +1,8 @@
 import React from "react";
 import { MdOpenInNew } from "react-icons/md";
 
+function Hero( {setActivePage} ) {
 
-function Hero() {
   return (
       <header
         className="relative flex flex-col md:flex-row items-center px-15 md:px-40 py-10 bg-fixed bg-top shadow-2xl"
@@ -77,18 +77,16 @@ function Hero() {
 
           {/* Segunda linha - Curriculum */}
           <div className="w-auto text-center md:text-left">
-            <a
-              href="https://drive.google.com/file/d/12tRbnI7nSwh1XSyUN-m6jpQPl6McPa1y/view"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
               className="px-8 py-2 text-white rounded-full flex items-center gap-2 justify-center md:justify-start"
               style={{ backgroundColor: "rgb(20, 43, 42)", transition: "background-color 0.2s ease" }}
               onMouseEnter={(e) => (e.target.style.backgroundColor = "rgb(112, 115, 114)")}
               onMouseLeave={(e) => (e.target.style.backgroundColor = "rgb(20, 43, 42)")}
+              onClick={() => setActivePage("cv")} // Altera a página para 'cv'
             >
               Curriculum
               <MdOpenInNew className="text-xl" />
-            </a>
+            </button>
           </div>
         </div>
 

@@ -8,10 +8,10 @@ import TeachingTimeline from "../teaching";
 import WorkingPapers from "../workingPapers";
 import Footer from "../Footer";
 
-function Home() {
+function Home({setActivePage})  {
   return (
     <>
-      <Hero />
+      <Hero setActivePage={setActivePage}/>
       <AboutMe />
       <section
         className="relative flex items-center justify-center text-white text-center w-4/4"

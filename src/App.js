@@ -62,7 +62,7 @@ function App() {
           toggleAdminMode={toggleAdminMode}
         />
       ) : (
-        <Navbar setActivePage={setActivePage} />
+        <Navbar isAuthenticated={isAuthenticated} activePage={activePage} setActivePage={setActivePage} />
       )}
 
       <hr className="w-12/12 mx-auto border-t border-gray-200" />
@@ -78,18 +78,8 @@ function App() {
           </button>
         </div>
       )}
+      
 
-      {/*login admin (visível apenas quando não autenticado) */}
-      {!isAuthenticated && activePage === "home" && (
-        <div className="text-right p-2">
-          <button 
-            onClick={() => setActivePage("admin-login")}
-            className="px-4 py-1 text-gray-500 hover:text-gray-700 text-sm"
-          >
-            Admin
-          </button>
-        </div>
-      )}
 
       {/*conteúdo da pag com animação */}
       <AnimatePresence mode="wait">
@@ -102,7 +92,7 @@ function App() {
           className="w-full flex-grow"
         >
           {/* pags públicas */}
-          {!isAdminMode && activePage === "home" && <Home />}
+          {!isAdminMode && activePage === "home" && <Home setActivePage={setActivePage}/>}
           {!isAdminMode && activePage === "shortbio" && <ShortBio />}
           {!isAdminMode && activePage === "cv" && <PdfViewer />}
           {!isAdminMode && activePage === "education" && <Educationpage />}
@@ -110,12 +100,12 @@ function App() {
           {!isAdminMode && activePage === "teaching" && <Teachingpage />}
           {!isAdminMode && activePage === "workingpapers" && <WorkingPaperspage />}
           
-          {/* Pagi login de admin */}
+          {/* pag login de admin */}
           {activePage === "admin-login" && (
             <Login handleLogin={handleLogin} />
           )}
           
-          {/* Pags de admin */}
+          {/* pag de admin */}
           {isAuthenticated && isAdminMode && activePage === "admin-dashboard" && (
             <AdminDashboard />
           )}
