@@ -27,7 +27,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https:/adrianogullo.github.io/page_Gessica",
+  "homepage": "https://adrianogullo.github.io/page_Gessica",
   "scripts": {
     "start": "craco start",
     "build": "craco build",
