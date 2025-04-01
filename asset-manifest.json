@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/page_Gessica/static/css/main.83ebdd32.css",
-    "main.js": "/page_Gessica/static/js/main.ad7ff71b.js",
+    "main.js": "/page_Gessica/static/js/main.b0e208c5.js",
     "index.html": "/page_Gessica/index.html",
     "main.83ebdd32.css.map": "/page_Gessica/static/css/main.83ebdd32.css.map",
-    "main.ad7ff71b.js.map": "/page_Gessica/static/js/main.ad7ff71b.js.map"
+    "main.b0e208c5.js.map": "/page_Gessica/static/js/main.b0e208c5.js.map"
   },
   "entrypoints": [
     "static/css/main.83ebdd32.css",
-    "static/js/main.ad7ff71b.js"
+    "static/js/main.b0e208c5.js"
   ]
 }
